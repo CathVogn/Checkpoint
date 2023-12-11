@@ -1,0 +1,435 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    }
+
+    body{
+        background-color: #FFFEF5;
+    }
+
+
+    nav ul {
+      display: inline-block;
+      list-style: none;
+      font-family: 'Barlow Semi Condensed', sans-serif;
+     
+  }
+
+  /* Stil for ikoner */
+.burger-item i {
+  font-size: 30px; 
+  color: white;
+}
+
+.nav-links{
+    position: absolute;
+    background: #FD6E86;
+    height: 100vh;
+    width:300px;
+    top:0;
+    right: -350px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+}
+
+
+.nav-links ul{
+    padding: 30px;
+}
+
+  /* Burgermenu ikon */
+  .fa-bars {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 60px;
+    color: #AD0000;
+  }
+  
+  .fa-times{
+      position: absolute;
+      left: 20px;
+      top: 15px;
+      cursor: pointer;
+      z-index: 2;
+      font-size: 60px;
+      color: #AD0000;
+  }
+  
+  #burger-text{
+    margin: 20px 22px;
+    color: white;
+    font-size: 20px;
+    padding-top: 60px;
+  }
+  
+  #burger-text a {
+    text-decoration: none; 
+    color: white; 
+    margin: 60px 0; 
+    font-size: 50px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: lighter; 
+   
+  }
+
+  #burger-text a:hover {
+    background-color: #AD0000; /* Farveændring ved hover */
+}
+
+
+
+
+
+.background-mund {
+  width: 30%;
+  height: 55%;
+  position: absolute;
+  margin-left: 34%;
+  padding-top: 60px;
+  z-index: 1; /* Set a lower z-index to place the background image below the logo */
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the background image covers the entire container */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Set a lower z-index to place the background image below the logo */
+}
+.background-image1 {
+  width: 48%;
+  height: 100%;
+  position: absolute;
+  top: 500px;
+  z-index: 0; /* Set a lower z-index to place the background image below the logo */
+}
+
+  
+.forside {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#logo {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* Set a higher z-index to place the logo on top */
+}
+
+    
+    /* infografik */
+    #modcheckpoint{
+        width: 100%;
+        padding-top: 400px;
+        z-index: 2; /* Set a lower z-index to place the background image below the logo */
+    }
+
+   
+    /* Knap book her */
+    button {
+        display: flex;
+        padding: 10px 40px;
+        font-size: 25px;
+        background-color: #FD6E86; /* Tilpas farven efter behov */
+        color: #FFFEF5; /* Tilpas farven efter behov */
+        border: none;
+        border-radius: 50px;
+        font-weight: bold; 
+    }
+
+
+    .knap{
+        margin-left: 43%;
+        margin-top: 80px;
+    }
+
+    button:hover {
+        background-color: #AD0000; /* Farveændring ved hover */
+    }
+
+    button span {
+        color: #AD0000; /* Farve for de specifikke bogstaver */
+    }
+
+    /* Smittet sektion */
+
+    .smittetdk{
+        padding-top: 100px;
+       padding-bottom: 150px; 
+       
+    }
+
+    .smittet{
+        background-color: #FD6E86;
+        padding: 65px;
+    }
+
+    #smittetbillede{
+    width: 50%;
+    margin-left: 25%;
+    }
+
+         /* video */
+    .video-container video{
+        width: 100%;
+        height: 100%;
+      }
+     
+      
+      .video-container {
+            display: flex;
+            padding-bottom: 30px;
+          }
+
+
+           /* forløb hos checkpoint */
+        #forlobhos{
+            padding-bottom: 80px;
+            width: 50%;
+            margin-left: 25%;
+            padding-top: 50px;
+        }
+
+      
+
+
+        .sektion {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+      }
+      
+      #forlobstreger1,
+      #forlobstreger2 {
+          width: 100%;
+          height: auto;
+      }
+      
+      .baggrundsfarve {
+          flex: 1;
+          background-color: #D5E5B9; /* Udskift med den ønskede baggrundsfarve */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
+        .cirklerforlob{
+         
+            padding-top: 20px;
+            display: flex;
+            margin-left: 20%;
+        }
+
+        .circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: black;
+            margin-right: 50px; /* Adjust the margin as needed */
+          }
+
+          /* Vidste du */
+          .vidstedu{
+            background-color: #FD6E86;
+            
+          }
+
+          #vidsteduinfo{
+           padding-top: 200px;
+           padding-bottom: 100px;
+           width: 70%;
+           height: 70%;
+           margin-left: 15%;
+          }
+
+
+          .itvivl h1{
+            font-size: 50px;
+            padding-top: 150px;
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-weight: lighter; 
+          }
+
+          .itvivl{
+            text-align: center;
+            padding-bottom: 150px;
+          }
+
+
+          #klamydiaoverskrift{
+            width: 50%;
+            height: 15%;
+            position: absolute;
+            z-index: 1;
+            margin-left: 28%;
+          }
+
+          .klamydia{
+            width: 50%;
+            height: 10%;
+            position: absolute;
+            z-index: 1;
+            margin-left: 25%;
+          }
+
+          .hvaderklamydia{
+            width: 50%;
+            height: 10%;
+            position: absolute;
+            padding-top: 500px;
+            z-index: 1;
+            margin-left: 25%;
+          }
+
+          .klamydiatekst{
+            margin-right: 10%;
+            margin-left: 15%;
+            font-size: 25px;
+            padding-top: 50px;
+            
+          }
+
+          .klamydiatekst h3{
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-weight: lighter; 
+            padding: 20px;
+          }
+
+          .klamydiatekst ul{
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-weight: lighter; 
+            padding: 20px;
+            padding-bottom: 20px;
+          }
+
+          .klamydiatekst ul li{
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-weight: lighter; 
+            padding: 10px;
+            padding-bottom: 20px;
+          }
+
+          #klamydiainfo{
+            margin-top: 10%;
+            margin-left: 20%;
+            margin-bottom: 10%;
+          }
+          .klamydiainfo{
+            width: 90%;
+            height: 100%;
+            margin-left: 7%;
+          }
+
+
+
+
+          footer{
+            background-color: #D5E5B9;
+            align-items: center;
+          }
+
+          footer h3{
+            padding-bottom: 80px;
+            padding-top: 40px;
+            margin-left: 40%;
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-weight: lighter; 
+          }
+
+          .text-container {
+            display: flex;
+            width: 100%;
+          }
+          
+          footer h2{
+            margin-left: 5%;
+            margin-right: 15%;
+            font-size: 30px;
+            margin-bottom: 10%;
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-weight:lighter;
+            line-height: 1.5;
+          }
+
+          #modcheckpointmobile{
+            display: none;
+            width: 100%;
+          }
+
+          .icon-container {
+            display: flex;
+            margin-left: 38%;
+            padding-bottom: 100px;
+        }
+        
+        .icon-container i {
+            font-size: 50px; /* Juster størrelsen efter behov */
+            margin-right: 40px; /* Juster afstanden mellem ikoner efter behov */
+        }
+
+          @media (max-width: 1100px){
+
+            #modcheckpoint{
+                display: none;
+            }
+
+            #modcheckpointmobile{
+              display: block;
+            }
+
+            .cirklerforlob{
+              align-items: center;
+              display: flex;
+              flex-direction: column;
+              padding-top: 30px;
+              margin-bottom: 20px;
+              }
+
+              .background-image1{
+                display: none;
+              }
+
+              .background-mund{
+                width: 60%;
+                height: 60%;
+              }
+            
+            }
+
+            @media (max-width: 700px){
+              
+              .circle{
+                width: 100%;
+               }
+
+               .knap{
+                margin-left: 30%;
+                margin-top: 80px;
+            }
+
+            .smittetbillede{
+              width: 100%;
+            }
+
+            .circle {
+              width: 150px;
+              height: 150px;
+              border-radius: 50%;
+              margin-bottom: 20%;
+            }
+            }
+            
+           
+      
+
