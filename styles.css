@@ -367,11 +367,17 @@
           footer{
             background-color: #D5E5B9;
             align-items: center;
+
+              position: relative;
+                display: grid; /* Brug grid layout */
+                padding-top: 10px;
+                grid-template-rows: 80% 20%; /* Del containeren i to kolonner med samme bredde */
           }
+          
 
           footer h3{
-            padding-bottom: 80px;
-            padding-top: 40px;
+            padding-bottom: 50px;
+            padding-top: 20px;
             margin-left: 40%;
             font-family: 'Barlow Semi Condensed', sans-serif;
             font-weight: lighter; 
@@ -383,82 +389,287 @@
           }
           
           footer h2{
-            margin-left: 5%;
-            margin-right: 15%;
-            font-size: 30px;
-            margin-bottom: 10%;
+            margin-left: 8%;
+            margin-right: 12%;
+            font-size: 20px;
+            margin-bottom: 5%;
             font-family: 'Barlow Semi Condensed', sans-serif;
             font-weight:lighter;
             line-height: 1.5;
           }
 
-          #modcheckpointmobile{
-            display: none;
-            width: 100%;
-          }
+         
+
 
           .icon-container {
             display: flex;
-            margin-left: 38%;
-            padding-bottom: 100px;
+            margin-left: 40%;
+            padding-bottom: 30px;
         }
         
         .icon-container i {
-            font-size: 50px; /* Juster størrelsen efter behov */
-            margin-right: 40px; /* Juster afstanden mellem ikoner efter behov */
+            font-size: 35px; /* Juster størrelsen efter behov */
+            margin-right: 50px; /* Juster afstanden mellem ikoner efter behov */
         }
 
-          @media (max-width: 1100px){
+        #forlobstreger1{
+          width: 100%;
+        }
 
-            #modcheckpoint{
-                display: none;
+        @media (max-width: 1100px){
+
+          #modcheckpointoverskrift{
+            width: 80%;
+              padding-top: 1000px;
+              margin-left: 10%;
+          }
+
+          #modcheckpointmobile{
+            width: 0%;
+          }
+
+          .cirklerforlob{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding-top: 30px;
+            margin-bottom: 20px;
             }
 
-            #modcheckpointmobile{
-              display: block;
+            .background-image1{
+              display: none;
             }
 
-            .cirklerforlob{
-              align-items: center;
-              display: flex;
-              flex-direction: column;
-              padding-top: 30px;
-              margin-bottom: 20px;
-              }
-
-              .background-image1{
-                display: none;
-              }
-
-              .background-mund{
-                width: 60%;
-                height: 60%;
-              }
-            
+            .background-mund{
+              width: 60%;
+              height: 60%;
             }
 
-            @media (max-width: 700px){
-              
-              .circle{
-                width: 100%;
-               }
-
-               .knap{
-                margin-left: 30%;
-                margin-top: 80px;
-            }
-
-            .smittetbillede{
+            .klamoverskrifter{
               width: 100%;
             }
 
-            .circle {
-              width: 150px;
-              height: 150px;
-              border-radius: 50%;
-              margin-bottom: 20%;
+
+            #klamydiaoverskrift{
+              margin-left: 8%;
+              padding-bottom: 200px;
+              width: 90%;
+              height: 10%;
             }
+  
+            .klamydia{
+              width: 80%;
+              height: 10%;
+              margin-left: 25%;
+             
             }
+  
+            .klamoverskrifter{
+              width: 100%;
+             
+            }
+            .hvaderklamydia{
+              margin-left: 25%;
+            }
+
+            .klamydiainfo{
+             width: 100%;
+            }
+
+            footer{
+              padding-top: 40px;
+                  grid-template-rows: 20% 80%; /* Del containeren i to kolonner med samme bredde */
+            }
+
+            footer h3{
+              margin-left: 23%;
+             }
+       
+             .text-container{
+             display: flex;
+                   flex-direction: column;
+                   align-items: center;
+                   text-align: center;
+                 font-size: 30px;}
+       
+                 .text-container h2{
+                       font-size: 30px;
+                     margin-left: 35%;}
+       
+       
+                     .icon-container{
+                       margin-left: 42%;
+                     }
+                   .icon-container i{
+                     font-size: 30px;
+                   }
+
+
+          }
+
+          @media (max-width: 1099px){
+            #hvordantestmobil{
+              width: 60%;
+              margin-left: 20%;
+            }
+            .klamydiainfo{
+              display: none;
+            }
+
+            .background-mund {
+              width: 40%;
+              height: 50%;
+              position: absolute;
+              margin-left: 30%;
+              padding-top: 60px;
+            }
+
+            #modcheckpoint{
+              width: 100%;
+          }
+
+          #modcheckpointmobile{
+            width: 0%;
+          }
+
+          footer{
+            padding-top: 35px;
+            grid-template-rows: 85% 15%; /* Del containeren i to kolonner med samme bredde */
+      }
+
+      footer h3{
+        margin-left: 35%;
+       }
+ 
+       .text-container{
+       display: flex;
+             flex-direction: column;
+             align-items: center;
+             text-align: center;
+           font-size: 30px;}
+ 
+           .text-container h2{
+                 font-size: 20px;
+               margin-left: 17%;}
+ 
+ 
+               .icon-container{
+                 margin-left: 42%;
+               }
+             .icon-container i{
+               font-size: 30px;
+             }
+          }
+
+
+          @media (max-width: 700px){
+            
+            .circle{
+              width: 100%;
+             }
+
+             .knap{
+              margin-left: 30%;
+              margin-top: 80px;
+          }
+
+          .smittetbillede{
+            width: 100%;
+          }
+
+          .circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20%;
+          }
+
+
+          #klamydiaoverskrift{
+            margin-left: 8%;
+            padding-bottom: 200px;
+            width: 90%;
+            height: 10%;
+          }
+
+          .klamydia{
+            width: 80%;
+            height: 10%;
+            margin-left: 25%;
+           
+          }
+
+          .klamoverskrifter{
+            width: 100%;
+           
+          }
+          .hvaderklamydia{
+            margin-left: 10%;
+          }
+
+          .klamydiatekst h3{
+            font-size: 20px;
+          }
+
+          .klamydiatekst ul li{
+            font-size: 20px;
+          }
+
+          .klamydiainfo{
+            display: none;
+          }
+
+          .background-mund {
+            width: 70%;
+            height: 50%;
+            position: absolute;
+            margin-left: 15%;
+            padding-top: 60px;
+          }
+
+          #modcheckpointmobile{
+            width: 100%;
+            padding-top: 200px;
+          }
+
+          #modcheckpoint{
+            display: none;
+        }
+
+        #modcheckpointoverskrift{
+          width: 80%;
+            padding-top: 1000px;
+            margin-left: 10%;
+        }
+
+        footer{
+          padding-top: 40px;
+          grid-template-rows: 85% 15%; /* Del containeren i to kolonner med samme bredde */
+    }
+
+    footer h3{
+     margin-left: 23%;
+    }
+
+    .text-container{
+    display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        font-size: 30px;}
+
+        .text-container h2{
+              font-size: 15px;
+            margin-left: 15%;}
+
+
+            .icon-container{
+              margin-left: 30%;
+            }
+          .icon-container i{
+            font-size: 25px;
+          }
+          }
             
            
       
