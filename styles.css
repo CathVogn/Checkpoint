@@ -8,71 +8,131 @@
     }
 
 
-    .burger-item i {
-      font-size: 30px; 
-      color: white;
-    }
     
-    .nav-links{
-        position: absolute;
-        background: #FD6E86;
-        height: 100vh;
-        width:300px;
-        top:0;
-        right: -350px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-    }
-    
-    
-    .nav-links ul{
-        padding: 30px;
-    }
-    
-      /* Burgermenu ikon */
-      .fa-bars {
-        position: absolute;
-        right: 20px;
-        top: 25px;
-        cursor: pointer;
-        z-index: 2;
-        font-size: 60px;
-        color: #AD0000;
-      }
+    #menuToggle
+    {
+      display: block;
+      position: relative;
+      top: 25px;
+      left: 50px;
       
-      .fa-times{
-          position: absolute;
-          left: 10px;
-          top: 15px;
-          cursor: pointer;
-          z-index: 2;
-          font-size: 60px;
-          color: #AD0000;
-      }
+      z-index: 1;
       
-      #burger-text{
-        margin: 20px 20px;
-        color: #FFFEF5;
-        flex-direction: column;
-        display: flex;
-      }
-    
-      
-      #burger-text a {
-        text-decoration: none; 
-        color: #FFFEF5; 
-        font-size: 40px;
-        font-family: 'Barlow Semi Condensed', sans-serif;
-        font-weight: lighter; 
-        margin-top: 5%;
-        margin-bottom: 5%;
-      }
-    
-      #burger-text a:hover {
-        background-color: #AD0000; /* Farveændring ved hover */
+      -webkit-user-select: none;
+      user-select: none;
     }
     
+    #menuToggle a
+    {
+      text-decoration: none;
+      color: #FFFEF5;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: lighter; 
+      transition: color 0.3s ease;
+    }
+    
+    #menuToggle a:hover
+    {
+      color: orange;
+    }
+    
+    
+    #menuToggle input
+    {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      
+      cursor: pointer;
+      
+      opacity: 0; 
+      z-index: 2; 
+      
+      -webkit-touch-callout: none;
+    }
+    
+    #menuToggle span
+    {
+      display: block;
+      width: 50px;
+      height: 8px;
+      margin-bottom: 5px;
+      position: relative;
+      
+      background: #AD0000;
+      border-radius: 5px;
+      
+      z-index: 1;
+      
+      transform-origin: 4px 0px;
+      
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
+    }
+    
+    #menuToggle span:first-child
+    {
+      transform-origin: 0% 0%;
+    }
+    
+    #menuToggle span:nth-last-child(2)
+    {
+      transform-origin: 0% 100%;
+    }
+    
+    #menuToggle input:checked ~ span
+    {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #AD0000;
+    }
+    
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    #menu
+    {
+      position: absolute;
+      width: 300px;
+      margin: -100px 0 0 -50px;
+      padding: 50px;
+      padding-top: 225px;
+      height: 100vh;
+      background: #FD6E86;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+    
+      
+      transform-origin: 0% 0%;
+      transform: translate(-100%, 0);
+      
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    
+    #menu li
+    {
+      padding: 10px 0;
+      font-size: 50px;
+    }
+    
+    #menuToggle input:checked ~ ul
+    {
+      transform: none;
+    }
+
+
     #linje3{
       margin: 100px 15px;
       color: #FFFEF5;
@@ -84,8 +144,8 @@
       display: flex;
       padding: 10px 20px;
       font-size: 25px;
-      background-color: #FFFEF5; /* Tilpas farven efter behov */
-      color: #FD6E86; /* Tilpas farven efter behov */
+      background-color: #FFFEF5;
+      color: #FD6E86;
       border: none;
       border-radius: 50px;
       font-weight: bold; 
@@ -93,20 +153,16 @@
     
     
     .knap1{
-      margin-left: 20%;
+      margin-left: 10%;
       margin-top: 80px;
     }
     
     button:hover {
-      background-color: #AD0000; /* Farveændring ved hover */
+      background-color: #AD0000;
     }
     
-    button span {
-      color: #AD0000; /* Farve for de specifikke bogstaver */
-    }
-    
-    button span:hover {
-    color: white; /* Farve for de specifikke bogstaver */
+    .knap1 button span {
+      color: #AD0000;
     }
     
 
