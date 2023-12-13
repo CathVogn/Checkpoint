@@ -224,206 +224,42 @@
 
 
            /* forløb hos checkpoint */
-        #forlobhos{
-            padding-bottom: 80px;
-            width: 50%;
-            margin-left: 25%;
-            padding-top: 50px;
-        }
-
-      
-
-
-        .sektion {
-          position: relative;
-          display: flex;
-          flex-direction: column;
-      }
-      
-      #forlobstreger1,
-      #forlobstreger2 {
-          width: 100%;
-          height: auto;
-      }
-      
-      .baggrundsfarve {
-          flex: 1;
-          background-color: #D5E5B9; /* Udskift med den ønskede baggrundsfarve */
-          display: flex;
-          align-items: center;
-          justify-content: center;
-      }
-
-        .cirklerforlob{
-         
-            padding-top: 20px;
-            display: flex;
-            margin-left: 20%;
-        }
-
-        .circle {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background-color: black;
-            margin-right: 50px; /* Adjust the margin as needed */
-          }
-
-
-          #forlobhos{
-            padding-bottom: 80px;
-            width: 50%;
-            margin-left: 25%;
-            padding-top: 50px;
-        }
-
-      
-
-
-        .sektion {
-          position: relative;
-        }
-        
-        
-        .cirklerforlob {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          margin-left: 10%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        
-        .circle {
-          width: 300px; 
-          height: 300px;
-          margin-right: 10%; 
-        }
-        
-
-        .circle img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover; 
-          border-radius: 100%; 
-        }
-
-        #forlobstreger{
-          width: 100%;
-          height: 120%;
-        }
-
-        .ikoner-container {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          width: 95%;
-          margin-top: 5%;
-          margin-left: 4%;
-      }
-      
-      .ikoner-billeder {
-          text-align: center;
-      }
-      
-      .ikoner-billeder img {
-          max-width: 100%;
-          height: auto;
+         #forlobhos{
+          padding-bottom: 80px;
           width: 50%;
+          margin-left: 25%;
+          padding-top: 50px;
       }
-      
-      
-      .ikoner-text{
-          padding-left: 40px;
-          margin: 5px 60px;
-          display: flex;
-          padding-bottom: 200px;
-      }
-      
-      .ikoner-text h3{
-          
-          color: #1c2666;
-          display: inline;
-          font-family: 'Barlow Semi Condensed', sans-serif;
-          font-size: 30px;
-          margin: 0 6%;
-      }
-      
 
+        #farvestreger{
+          width: 100%;
+        }
+    
 
-.container {
-  position: relative;
-  width: 100%;
-  max-width: 800px; /* Just an example width for the container */
-  margin: auto;
-}
-
-.background-image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.overlay-image {
-  position: relative;
-  display: inline-block;
-}
-
-.overlay-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.image-text {
-  text-align: center;
-  margin-top: 5px;
-}
-
-
-      .container {
+        .sektion-gif {
         position: relative;
-        width: 100%;
-        margin: auto;
-      }
-  
-      .background-image {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-  
-      .overlay-image {
+              display: grid; 
+              padding-top: 10px;
+              grid-template-rows: 10% 90%;
+              
+    }
+
+    .gifpaaraekke {
         position: absolute;
         top: 0;
-        left: 0;
-        width: 50%;
-        height: auto;
-        padding-top: 80px;
-      }*/
-
-    .overlay-image:nth-child(1) { left: 10%; } /*  */
-    .overlay-image:nth-child(2) { left: 0%; } /* nummer */
-    .overlay-image:nth-child(3) { left: 35%; margin-left: -10px; }/* test */
-    .overlay-image:nth-child(4) { left: 70%;} /* minsundhed */
-    .overlay-image:nth-child(5) { left: 20%; }/* kald ind */
-
-    .overlay-image:nth-child(1) .image-text:nth-child(1){ left: 10%; } /* nummer */
-    .overlay-image:nth-child(2) .image-text:nth-child(2){ left: 0%; } /* nummer */
-    .overlay-image:nth-child(3) .image-text:nth-child(3){ left: 35%; margin-left: -10px; }/* test */
-    .overlay-image:nth-child(4) .image-text:nth-child(4){ left: 70%;} /* minsundhed */
-    .overlay-image:nth-child(5) .image-text:nth-child(1){ left: 20%; }/* kald ind */
-
-    .image-text {
-      text-align: center;
-      margin-top: 200px; /* Adjust the margin as needed */
-      width: 100%;
-      position: relative;
-      bottom: 0;
+        left: 7.5%;
+        width: 85%; 
+        height: 100%; 
+        z-index: 1; 
     }
+     
+
+      #forlobstreger{
+        width: 100%;
+        height: 120%;
+      }
+
+
 
           /* Vidste du */
           .vidstedu{
