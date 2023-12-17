@@ -1,0 +1,6 @@
+User agent: *
+Allow: /index.html
+Allow: /hiv.html
+Allow: /gonore.html
+Allow: /klam.html
+Allow: /test.html
