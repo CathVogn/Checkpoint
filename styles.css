@@ -1,955 +1,884 @@
 *{
-  margin: 0px;
-  padding: 0px;
-  }
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: lighter; 
+    margin: 0px;
+    padding: 0px;
+    }
 
-  body{
-      background-color: #FFFEF5;
-      font-family: 'Barlow Semi Condensed', sans-serif;
-  }
+    body{
+        background-color: #FFFEF5;
+    }
 
-  html, body {
-    overflow-x: hidden;
-  }
-  
-  fieldset {
-    border: none; /* Fjerner rammene rundt fieldset-elementet */
-}
+    html, body {
+      overflow-x: hidden;
+    }
+    
+    
 
-
-/* https://codepen.io/erikterwan/pen/EVzeRP*/
-/* BurgerMenu*/
+  /* https://codepen.io/erikterwan/pen/EVzeRP*/
+  /* BurgerMenu*/
 #menukontrol
 {
-display: block;
-position: relative;
-top: 50px;
-left: 50px;
-
-z-index: 3;
-
--webkit-user-select: none;
-user-select: none;
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 3;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 #menukontrol a
 {
-text-decoration: none;
-color: #FFFEF5;
-font-family: 'Barlow Semi Condensed', sans-serif;
-font-weight: lighter; 
-transition: color 0.3s ease;
+  text-decoration: none;
+  color: #FFFEF5;
+  transition: color 0.3s ease;
 }
 
 #menukontrol a:hover {
-color: orange;
+  color: orange;
 }
-
-
-
-
 
 #menukontrol input
 {
-display: block;
-width: 40px;
-position: absolute;
-left: -5px;
-cursor: pointer;
-opacity: 0; 
-z-index: 4; 
--webkit-touch-callout: none;
+  display: block;
+  width: 40px;
+  position: absolute;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 4; 
+  -webkit-touch-callout: none;
 }
 
 #menukontrol span
 {
-display: block;
-width: 50px;
-height: 8px;
-margin-bottom: 5px;
-position: relative;
-background: #AD0000;
-border-radius: 5px;
-z-index: 3;
-transform-origin: 4px 0px;
-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-            background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-            opacity 0.55s ease;
+  display: block;
+  width: 50px;
+  height: 8px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #AD0000;
+  border-radius: 5px;
+  z-index: 3;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
 }
 
 #menukontrol span:first-child
 {
-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
 }
 
 #menukontrol span:nth-last-child(2)
 {
-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
 }
 
 #menukontrol input:checked ~ span
 {
-opacity: 1;
-transform: rotate(45deg) translate(-2px, -1px);
-background: #AD0000;
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #AD0000;
 }
 
 #menukontrol input:checked ~ span:nth-last-child(3)
 {
-opacity: 0;
-transform: rotate(0deg) scale(0.2, 0.2);
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
 }
 
 #menukontrol input:checked ~ span:nth-last-child(2)
 {
-transform: rotate(-45deg) translate(0, -1px);
+  transform: rotate(-45deg) translate(0, -1px);
 }
 
 #menu
 {
-position: absolute;
-width: 300px;
-margin: -100px 0 0 -50px;
-padding: 50px;
-padding-top: 225px;
-height: 100vh;
-background: #FD6E86;
-list-style-type: none;
--webkit-font-smoothing: antialiased;
-transform-origin: 0% 0%;
-transform: translate(-100%, 0);
-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 225px;
+  height: 100vh;
+  background: #FD6E86;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #menu li
 {
-padding: 10px 0;
-font-size: 50px;
+  padding: 10px 0;
+  font-size: 50px;
 }
 
 #menukontrol input:checked ~ ul
 {
-transform: none;
+  transform: none;
 }
 
 /* BurgerMenu Linje*/
 #linje3{
-margin: 100px 15px;
-color: #FFFEF5;
-border-top: 1px solid #fff;
-justify-content: center;
+  margin: 100px 15px;
+  color: #FFFEF5;
+  border-top: 1px solid #fff;
+  justify-content: center;
 }
 
 /* BurgerMenu knap*/
 
 
 .knap1 h3 {
-width: 60%;
-display: flex;
-padding: 10px 20px;
-font-size: 25px;
-background-color: #FFFEF5;
-color: #FD6E86;
-border: none;
-border-radius: 50px;
-font-weight: bold; 
+  width: 60%;
+  display: flex;
+  padding: 10px 20px;
+  font-size: 25px;
+  background-color: #FFFEF5;
+  color: #FD6E86;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold; 
 }
 
 .knap1 p{
-color: #AD0000;
+  font-weight: bold;
+  color: #AD0000;
 }
 
 .knap1{
-margin-left: 10%;
-margin-top: 80px;
+  margin-left: 10%;
+  margin-top: 80px;
 }
 
 /* Baggrund + mund*/
 .background-mund {
-width: 100%;
-position:absolute;
-z-index: 2;
-animation: slowMotion 5s forwards;
-padding-top: 200px;
+  width: 100%;
+  position:absolute;
+  z-index: 2;
+  animation: slowMotion 5s forwards;
+  padding-top: 200px;
 }
 
 .background-mund img {
-width: 25%; 
-height: auto; 
-display: block;
-margin: 0 auto;
+  width: 25%; 
+  height: auto; 
+  display: block;
+  margin: 0 auto;
 }
 
 
 @keyframes slowMotion {
-0%, 100% {
-  transform: scale(0.5); 
-}
-100% {
-  transform: scale(1); 
-}
+  0%, 100% {
+    transform: scale(0.5); 
+  }
+  100% {
+    transform: scale(1); 
+  }
 }
 
 .background-image {
-width: 100%;
-height: 100%;
-object-fit: cover; 
-position: absolute;
-top: 0;
-z-index: 1; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  position: absolute;
+  top: 0;
+  z-index: 1; 
 }
 
 .forside {
-display: flex;
-position: relative;
-width: 100%;
-height: 100vh;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
 #logoquiz{
-position: absolute;
-top: 25px;
-left: 46%;
-transform: translate(-50%, -50%);
-z-index: 2;  
+  position: absolute;
+  top: 25px;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  z-index: 2;  
 }
 
 #logo {
-position: absolute;
-top: 75px;
-left: 50%;
-transform: translate(-50%, -50%);
-z-index: 2; 
+  position: absolute;
+  top: 75px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; 
 }
 
 
 /* Mød Checkpoint*/
 #modcheckpointoverskrift{
-width: 50%;
-margin-left: 25%;
-  padding-top: 800px;
- 
+  width: 50%;
+  margin-left: 25%;
+    padding-top: 800px;
+   
 }
 
 .modcheckpointsektion{
-width: 80%;
-margin-left: 10%;
-margin-right: 5%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 5%;
 }
-  
-  /* infografik */
-  #modcheckpoint{
-      width: 100%;
-  }
-
-  #modcheckpointmobile{
-    width: 0%;
-  }
-
- 
-  /* Knap book her */
- .knap2 a {
-  width: 45%;
-  text-decoration: none;
-      display: flex;
-      padding: 10px 40px;
-      font-size: 25px;
-      background-color: #FD6E86; 
-      border: none;
-      border-radius: 50px;
-      font-weight: bold; 
-      color: #FFFEF5;
-  }
-
-  .knap2{
-    padding-top: 80px;
-    margin-left: 42.5%;
-    margin-right: 37%;
-  }
-
-  a:hover {
-      background-color: #F2A565; 
-  }
-
-  a span {
-      color: #AD0000; 
-  }
-
-  /* Smittet sektion */
-
-  .smittetdk{
-      padding-top: 100px;
-     padding-bottom: 150px; 
-     
-  }
-
-  .smittet{
-      background-color: #FD6E86;
-      padding: 65px;
-  }
-
-  #smittetbillede{
-  width: 70%;
-  margin-left: 15%;
-  }
-
-       /* video */
-       .video-container {
-        max-width: 1100px; 
-        margin: 0 auto; 
-        padding-bottom: 200px;
-      }
-  
-      .video-container video {
-        width: 100%; 
-        height: auto; 
-      }
-  
-
-
-         /* forløb hos checkpoint */
-      #forlobhos{
-          padding-bottom: 80px;
-          width: 50%;
-          margin-left: 25%;
-          padding-top: 50px;
-      }
-
-
-      /* Sektion gif */
-
-        .sektion-gif {
-        position: relative;
-              display: grid; 
-              padding-top: 10px;
-              grid-template-rows: 10% 90%;
-              
-    }
-
     
-    #farvestregermobil {
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1; 
-      display: block; 
+    /* infografik */
+    #modcheckpoint{
+        width: 100%;
     }
-    
-    .gifpaaraekkemobil {
-      width: 0;
-      position: relative;
-      z-index: 2; 
+
+    #modcheckpointmobile{
+      width: 0%;
     }
+
    
-
-    .sektion-gifmobil{
-      width: 0;
-      position: relative;
-      display: grid; 
-      padding-top: 10px;
-       grid-template-rows: 10% 90%;
-    }
-
-    .gifpaaraekke {
-        position: absolute;
-        top: 0;
-        left: 7.5%;
-        width: 85%; 
-        height: 100%; 
-        z-index: 1; 
-    }
-
-    
-     
-
-      #farvestreger{
-        width: 100%;
-      }
-      
-
-        /* Vidste du */
-        .vidstedu{
-          width: 100%;
-          background-color: #FD6E86;
-        }
-
-        #vidsteduinfo{
-         padding-top: 100px;
-         padding-bottom: 100px;
-         width: 60%;
-         margin-left: 20%;
-        }
-
-
-         /* I tvivl */
-        .itvivl h1{
-          font-size: 50px;
-          padding-top: 150px;
-          font-family: 'Barlow Semi Condensed', sans-serif;
-          font-weight: lighter; 
-        }
-
-        .itvivl{
-          text-align: center;
-          width: 100%;
-          padding-bottom: 150px;
-        }
-
-        /* Informationssider */
-        .informationsider{
-          display: flex;
-          position: relative;
-          width: 100%;
-          height: 40vh;
-        }
-
-        .infooverskrifter{
-          margin-left: 33%;
-          margin-right: 30%;
-          width: 100%;
-         position: absolute;
-          padding-bottom: 100px;
-          z-index: 2;
-        }
-
-        .infooverskrifterquiz{
-          margin-left: 40%;
-          margin-right: 40%;
-          width: 100%;
-          padding-top: 100px;
-          padding-bottom: 100px;
-        }
-
-
-        #hvader{
-          position: absolute;
-          padding-bottom: 100px;
-          z-index: 3;
-          padding-top: 350px;
-          width: 30%;
-          margin-left: 2%;
-        }
-
-        /* Brød tekst*/
-
-        .brødtekst1{
-          margin-right: 10%;
-          margin-left: 15%;
-          font-size: 20px;
-          padding-top: 150px;
-          
-        }
-
-        .brødtekst ul{
-          font-family: 'Barlow Semi Condensed', sans-serif;
-          font-weight: lighter; 
-          padding: 20px;
-          padding-bottom: 20px;
-        }
-
-        .brødtekst ul li{
-          font-family: 'Barlow Semi Condensed', sans-serif;
-          font-weight: lighter; 
-          padding: 10px;
-          padding-bottom: 10px;
-        }
-
-        .brødtekst{
-          line-height: 45px;
-          margin-right: 10%;
-          margin-left: 15%;
-          font-size: 20px;
-          padding-top: 500px;
-        }
-
-        .brødtekst h3{
-          font-family: 'Barlow Semi Condensed', sans-serif;
-          font-weight: lighter; 
-          padding: 20px;
-        }
-
-        .brødtekst1 h3{
-          font-family: 'Barlow Semi Condensed', sans-serif;
-          font-weight: lighter; 
-          padding: 20px;
-        }
-
-        .brødtekst1 ul{
-          font-family: 'Barlow Semi Condensed', sans-serif;
-          font-weight: lighter; 
-          padding: 20px;
-          padding-bottom: 20px;
-        }
-
-        .brødtekst1 ul li{
-          font-family: 'Barlow Semi Condensed', sans-serif;
-          font-weight: lighter; 
-          padding: 10px;
-          padding-bottom: 20px;
-        }
-
-        /* Hvordan foregår test*/
-        #hvordantestoverskrift{
-          margin-left: 10%;
-          width: 60%;
-          padding-top: 100px;
-        }
-
-        #hvordantest{
-          width: 80%;
-          padding-top: 100px;
-          padding-bottom: 150px;
-        }
-       
-
-        #hvordantestmobil{
-          width: 0%;
-        }
-
-        .hvordantestsektion{
-          width: 100%;
-          margin-left: 10%;
-          margin-right: 10%;
-        }
-
-
-        /* Gonore */
-
-        #forsideoverskrift{
-          position: absolute;
-          top: 0;
-          left: 0;
-          padding-bottom: 200px;
-          z-index: 2;
-          width: 35%;
-        }
-
-        #forsideoverskriftquiz{
-          position: absolute;
-          padding-bottom: 300px;
-          width: 15%;
-          padding-top: 200px;
-          margin-left: 2%;
-        }
-
-        #symptomergonore{
-          padding-top: 90px;
-          width: 40%;
-        }
-
-
-        /* Hiv */
-
-        #hivoverskrift{
-          width: 30%;
-          margin-left: 45%;
-          padding-bottom: 200px;
-      
-        }
-
-
-         #hivinfo{
-          padding-bottom: 5%;
-          width: 50%;
-          margin-left: 20%;
-        }
-
-
-        /* footer */
-        footer{
-          width: 100%;
-          background-color: #D5E5B9;
-          align-items: center;
-            position: relative;
-              display: grid; 
-              grid-template-rows: 10% 90%; 
-        }
-        
-        .footer{
-          height: 80%;
-          width: 100%;
-        }
-
-        footer a{
-          text-decoration: none;
-          margin-left: 38%;
-          width: 100%;
-          text-align: center;
-          font-family: 'Barlow Semi Condensed', sans-serif;
-          font-weight: lighter; 
-          color: black;
-        }
-
-        .tekstfooter {
-          padding-top: 50px;
-          display: flex;
-          width: 100%;
-          justify-content: center;
-        }
-        
-        footer h2{
-          margin-left: 8%;
-          margin-right: 12%;
-          font-size: 20px;
-          margin-bottom: 5%;
-          font-family: 'Barlow Semi Condensed', sans-serif;
-          font-weight:lighter;
-          line-height: 1.5;
-        }
-
-      #forlobstreger1{
-        width: 100%;
-      }
-
-      .ikoner {
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        display: flex;
-        
-    }
-    
-    .ikoner i {
-        font-size: 35px; 
-        margin-right: 35px; 
-    }
-
-    /* quiz sektion klamydia*/
-    .quizsektion{
-      padding-top: 400px;
-      padding-bottom: 200px;
-      width: 80%;
-      margin-left: 10%;
-      font-size: 25px;
-      text-align: center;
-      color: black;
-      align-items: center;
-      
-    }
-    .question{
-      font-weight: 200;
-    }
-    .answers {
-      margin-left: 0%;
-      padding-top: 50px;
-        margin-bottom: 100px;
-    }
-    #submit{
+    /* Knap book her */
+    .knap2 a {
+      width: 150px;
+      text-decoration: none;
       display: flex;
       padding: 10px 20px;
       font-size: 25px;
       background-color: #FD6E86;
-      color: #FFFEF5;
       border: none;
       border-radius: 50px;
-      font-weight: bold; 
-      margin-left: 41%;
-    }
-    #submit:hover{
-      background-color: #F2A565;
-    }
+      font-weight: bold;
+      color: #FFFEF5;
+  }
 
-          /* afstand mellem svarmulighederne i quizsektionen */
-    .quizsektion label {
-     
-      margin-right: 5%;
-      margin-bottom: 10px;
-      font-weight: 300;
+    .knap2{
+      padding-top: 80px;
+      margin-left: 43.5%;
     }
 
-    #klamoverskriftertest{
-      width: 30%;
-          margin-right: 20%;
-          padding-bottom: 50px;
-          padding-top: 100px;
+    .knap2 span{
+      font-weight: bold;
     }
 
-    #results{
-      margin-right: 3%;
-      padding-top: 100px;
-      font-weight: 300;
-      font-size: 50px;
+    a:hover {
+        background-color: #F2A565; 
     }
 
+    a span {
+        color: #AD0000; 
+    }
 
+    /* Smittet sektion */
 
-        @media (max-width: 1100px){
-
-          .sektion-gifmobil{
-            width: 0;
-          }
-
-          
-
-          .knap2{
-            margin-left: 38%;
-            margin-right: 0;
-          }
-
-           /* Mød checkpoint */
-          
-          #modcheckpointmobile{
-            width: 0%;
-          }
-
-          #modcheckpoint{
-            width: 100%;
-          }
-
-            /* Klamydia */
-            #klamoverskrifter{
-              width: 50%;
-            }
-
-            /* footer */
-
-             .tekstfooter{
-             display: flex;
-                   flex-direction: column;
-                   align-items: center;
-                   text-align: center;}
+    .smittetdk{
+        padding-top: 100px;
+       padding-bottom: 150px; 
        
-                 .tekstfooter h2{
-                       font-size: 20px;
-                     margin-left: 20%;
-                    margin-right: 20%;
-                    }
-       
+    }
 
-                    /* informationssider */
-                   #hvordantestoverskrift{
-                    width: 70%;
-                    padding-bottom: 70px;
-                    padding-top: 100px;
-                   }
+    .smittet{
+        background-color: #FD6E86;
+        padding: 65px;
+    }
 
-                    .hvader{
-                    width: 40%;
-                  }
+    #smittetbillede{
+    width: 70%;
+    margin-left: 15%;
+    }
 
-                  
-
-
-                   /* hiv */
-                   #hivoverskrift{
-                    width: 60%;
-                    margin-left: 14%;
-                    padding-bottom: 200px;
-                
-                  }
-        
-                 
-                  /* gif på række */
-                  .gifpaaraekkemobil{
-                   width: 0%;
-                  }
-
-                  .background-mund img{
-                    width: 40%;
-                  }
+         /* video */
+         .video-container {
+          max-width: 1100px; 
+          margin: 0 auto; 
+          padding-bottom: 200px;
+        }
     
-                   /* hiv */
-                   #hivoverskrift{
-                    width: 40%;
-                    margin-left: 30%;
-                    padding-bottom: 200px;
-                
-                  }
-        
-                  /* informationssider */
-                  #hvordantestmobil{
-                    width: 0%;
-                   
-                  }
-
-                  #hvordantest{
-                    margin: 0;
-                  }
-
-                  
+        .video-container video {
+          width: 100%; 
+          height: auto; 
+        }
     
-                  .hvader{
-                    width: 20%;
-                    margin-left: 45%;
-                  }
-    
-    
-                  /* gif på række */
-                  .gifpaaraekkemobil{
-                    width: 80%;
-                    margin-left: 10%;
-                  }
-    
-    
-                }
-
-          
 
 
-          @media (max-width: 700px){
-
-            .infooverskrifter{
-              margin-left: 22%;
-            }
-           
-            #forsideoverskrift{
-              width: 60%;
-            }
-            #farvestregermobil{
-              width: 100%;
-            }
-
-            .knap2{
-              margin-left: 30%;
-              margin-right: 0;
-            }
-            
-            /* gif på række */
-            .sektion-gif{
-              display: none;
-            }
-
-            .gifpaaraekkemobil{
-              margin-left: 0%;
-              width: 100%;
-            }
-
-            #hvordantestmobil{
-              margin-left: 0%;
-              width: 80%;
-              padding-bottom: 100px;
-            }
-
-            #smittetbillede{
-              width: 100%;
-              margin-left: 1%;
-              }
-
-
-
-          .smittetbillede{
-            width: 100%;
-          }
-
-
-           /* Klamydia */
-
-          .klamoverskrifter{
-            width: 100%;
-           
-          }
-
-          #hivinfo{
-            width: 80%;
-            margin-left: 8%;
-            padding-top: 75px;
-            padding-bottom: 20px
-          }
-      
-          /* informationsside */
-          #hvader{
+           /* forløb hos checkpoint */
+        #forlobhos{
+            padding-bottom: 80px;
             width: 50%;
-            margin-left: 5%
+            margin-left: 25%;
+            padding-top: 50px;
+        }
+
+
+        /* Sektion gif */
+
+          .sektion-gif {
+          position: relative;
+                display: grid; 
+                padding-top: 10px;
+                grid-template-rows: 10% 90%;
+                
+      }
+
+      
+      #farvestregermobil {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1; 
+        display: block; 
+      }
+      
+      .gifpaaraekkemobil {
+        width: 0;
+        position: relative;
+        z-index: 2; 
+      }
+     
+
+      .sektion-gifmobil{
+        width: 0;
+        position: relative;
+        display: grid; 
+      }
+
+      .gifpaaraekke {
+          position: absolute;
+          top: 0;
+          left: 7.5%;
+          width: 85%; 
+          height: 100%; 
+          z-index: 1; 
+      }
+
+      
+       
+
+        #farvestreger{
+          width: 100%;
+        }
+        
+
+          /* Vidste du */
+          .vidstedu{
+            width: 100%;
+            background-color: #FD6E86;
           }
 
-          .brødtekst h3{
+          #vidsteduinfo{
+           padding-top: 100px;
+           padding-bottom: 100px;
+           width: 60%;
+           margin-left: 20%;
+          }
+
+
+           /* I tvivl */
+          .itvivl h1{
+            font-size: 50px;
+            padding-top: 150px;
+          }
+
+          .itvivl{
+            text-align: center;
+            width: 100%;
+            padding-bottom: 150px;
+          }
+
+          /* Informationssider */
+          .informationsider{
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 40vh;
+          }
+
+          .infooverskrifter{
+            margin-left: 33%;
+            margin-right: 30%;
+            width: 100%;
+           position: absolute;
+            padding-bottom: 100px;
+            z-index: 2;
+          }
+
+          .infooverskrifterquiz{
+            margin-left: 40%;
+            margin-right: 40%;
+            width: 100%;
+            padding-top: 100px;
+            padding-bottom: 100px;
+          }
+
+
+          #hvader{
+            position: absolute;
+            padding-bottom: 100px;
+            z-index: 3;
+            padding-top: 350px;
+            width: 30%;
+            margin-left: 2%;
+          }
+
+          #forsideoverskrift{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding-bottom: 200px;
+            z-index: 2;
+            width: 35%;
+          }
+
+          /* Brød tekst*/
+
+          .brødtekst1{
+            margin-right: 10%;
+            margin-left: 15%;
             font-size: 20px;
+            padding-top: 150px;
+            
+          }
+
+          .brødtekst ul{
+            padding: 20px;
+            padding-bottom: 20px;
           }
 
           .brødtekst ul li{
+            padding: 10px;
+            padding-bottom: 10px;
+          }
+
+          .brødtekst{
+            line-height: 45px;
+            margin-right: 10%;
+            margin-left: 15%;
             font-size: 20px;
+            padding-top: 500px;
           }
 
-          #symptomergonore{
-            width: 50%;
-            margin-left: 5%
+          .brødtekst h3{
+            padding: 20px;
           }
-       
 
-          #modcheckpointmobile{
+          .brødtekst1 h3{
+            padding: 20px;
+          }
+
+          .brødtekst1 ul{
+            padding: 20px;
+            padding-bottom: 20px;
+          }
+
+          .brødtekst1 ul li{
+            padding: 10px;
+            padding-bottom: 20px;
+          }
+
+          /* Hvordan foregår test*/
+          #hvordantestoverskrift{
+            margin-left: 10%;
+            width: 60%;
+            padding-top: 100px;
+          }
+
+          #hvordantest{
+            width: 80%;
+            padding-top: 100px;
+            padding-bottom: 150px;
+          }
+         
+
+          #hvordantestmobil{
+            width: 0%;
+          }
+
+          .hvordantestsektion{
             width: 100%;
-            padding-top: 50px;
+            margin-left: 10%;
+            margin-right: 10%;
           }
 
-          #modcheckpoint{
-            display: none;
-        }
+          /* Gonore */
+          #symptomergonore{
+            padding-top: 90px;
+            width: 40%;
+          }
 
-        .modcheckpoint1{
+
+          /* Hiv */
+           #hivinfo{
+            padding-bottom: 5%;
+            width: 50%;
+            margin-left: 20%;
+          }
+
+
+          /* footer */
+          footer{
+            width: 100%;
+            background-color: #D5E5B9;
+            align-items: center;
+              position: relative;
+                display: grid; 
+                grid-template-rows: 10% 90%; 
+          }
+          
+          .footer{
+            height: 80%;
+            width: 100%;
+          }
+
+          footer a{
+            text-decoration: none;
+            margin-left: 38%;
+            width: 100%;
+            text-align: center;
+            color: black;
+          }
+
+          .tekstfooter {
+            padding-top: 50px;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+          }
+          
+          footer h2{
+            margin-left: 8%;
+            margin-right: 12%;
+            font-size: 20px;
+            margin-bottom: 5%;
+            font-weight:lighter;
+            line-height: 1.5;
+          }
+
+        #forlobstreger1{
           width: 100%;
         }
 
-        #modcheckpointoverskrift{
-          width: 80%;
-            padding-top: 800px;
-            margin-left: 10%;
-        }
+        .ikoner {
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          display: flex;
+          
+      }
+      
+      .ikoner i {
+          font-size: 35px; 
+          margin-right: 35px; 
+      }
 
-        #hvordantestoverskrift{
-          margin-left: 0%;
-          width: 80%;
-          padding-bottom: 70px;
-          padding-top: 100px;
-         }
+        /* https://simplestepscode.com/javascript-quiz-tutorial/ */
+      /* quiz sektion */
+      #forsideoverskriftquiz{
+        position: absolute;
+        padding-bottom: 300px;
+        width: 15%;
+        padding-top: 200px;
+        margin-left: 2%;
+      }
 
-        .tekstfooter h2{
+      .quizsektion{
+        padding-top: 400px;
+        padding-bottom: 200px;
+        width: 80%;
+        margin-left: 10%;
+        font-size: 25px;
+        text-align: center;
+        color: black;
+        align-items: center;
+        
+      }
+      .question{
+        font-weight: 200;
+      }
+      .answers {
+        margin-left: 0%;
+        padding-top: 50px;
+          margin-bottom: 100px;
+      }
+      #submit{
+        display: flex;
+        padding: 10px 20px;
+        font-size: 25px;
+        background-color: #FD6E86;
+        color: #FFFEF5;
+        border: none;
+        border-radius: 50px;
+        font-weight: bold; 
+        margin-left: 41%;
+      }
+      #submit:hover{
+        background-color: #F2A565;
+      }
+      
+            /* afstand mellem svarmulighederne i quizsektionen */
+      .quizsektion label {
+       
+        margin-right: 5%;
+        margin-bottom: 10px;
+        font-weight: 300;
+      }
+
+      #klamoverskriftertest{
+        width: 30%;
+            margin-right: 20%;
+            padding-bottom: 50px;
+            padding-top: 100px;
+      }
+
+      #results{
+        margin-right: 3%;
+        padding-top: 100px;
+        font-weight: 300;
+        font-size: 50px;
+      }
+
+      fieldset {
+        border: none; 
+    }
+
+
+
+          @media (max-width: 1100px){
+
+            .sektion-gifmobil{
+              width: 0;
+            }
+
+            .knap2{
+              margin-left: 40%;
+              margin-right: 0;
+            }
+
+             /* Mød checkpoint */
+            
+            #modcheckpointmobile{
+              width: 0%;
+            }
+
+            #modcheckpoint{
+              width: 100%;
+            }
+
+
+              /* footer */
+
+               .tekstfooter{
+               display: flex;
+                     flex-direction: column;
+                     align-items: center;
+                     text-align: center;}
+         
+                   .tekstfooter h2{
+                         font-size: 20px;
+                       margin-left: 20%;
+                      margin-right: 20%;
+                      }
+
+                      footer a{
+                        margin-left: 32%;
+                      }
+         
+
+                      /* informationssider */
+                     #hvordantestoverskrift{
+                      width: 70%;
+                      padding-bottom: 70px;
+                      padding-top: 100px;
+                     }
+
+                      .hvader{
+                      width: 40%;
+                    }
+          
+                   
+                    /* gif på række */
+                    .gifpaaraekkemobil{
+                     width: 0%;
+                    }
+
+                    .background-mund img{
+                      width: 40%;
+                    }
+          
+                    /* informationssider */
+                    #hvordantestmobil{
+                      width: 0%;
+                    }
+
+                    #hvordantest{
+                      margin: 0;
+                    }
+
+                    .hvader{
+                      width: 20%;
+                      margin-left: 45%;
+                    }
+      
+      
+                    /* gif på række */
+                    .gifpaaraekkemobil{
+                      width: 80%;
+                      margin-left: 10%;
+                    }
+                  }
+
+            
+
+
+            @media (max-width: 700px){
+
+              .infooverskrifter{
+                margin-left: 22%;
+              }
+             
+              #forsideoverskrift{
+                width: 60%;
+              }
+              #farvestregermobil{
+                width: 100%;
+              }
+
+              .knap2{
+                margin-left: 30%;
+                margin-right: 0;
+              }
+              
+              /* gif på række */
+              .sektion-gif{
+                display: none;
+              }
+
+              .gifpaaraekkemobil{
+                margin-left: 0%;
+                width: 100%;
+              }
+
+              #hvordantestmobil{
+                margin-left: 0%;
+                width: 80%;
+                padding-bottom: 100px;
+              }
+
+              #hvordantest{
+                display: none;
+               }
+
+              #smittetbillede{
+                width: 100%;
+                margin-left: 1%;
+                }
+
+                .sektion-gifmobil{
+                  width: 100%;
+                }
+
+            .smittetbillede{
+              width: 100%;
+            }
+
+            #hivinfo{
+              width: 80%;
+              margin-left: 8%;
+              padding-top: 75px;
+              padding-bottom: 20px
+            }
+        
+            /* informationsside */
+            #hvader{
+              width: 50%;
+              margin-left: 5%
+            }
+
+            .brødtekst h3{
+              font-size: 20px;
+            }
+
+            .brødtekst ul li{
+              font-size: 20px;
+            }
+
+            #symptomergonore{
+              width: 50%;
+              margin-left: 5%
+            }
+
+            #hvordantestoverskrift{
+              margin-left: 0%;
+              width: 80%;
+              padding-bottom: 70px;
+              padding-top: 100px;
+             }
+         
+
+             /* mødcheckpoint */
+            #modcheckpointmobile{
+              width: 100%;
+              padding-top: 50px;
+            }
+
+            #modcheckpoint{
+              display: none;
+          }
+
+          .modcheckpoint1{
+            width: 100%;
+          }
+
+          #modcheckpointoverskrift{
+            width: 80%;
+              padding-top: 800px;
+              margin-left: 10%;
+          }
+
+            /* footer */
+            footer a{
+              margin-left: 18%;
+            }
+
+            footer{
+                  grid-template-rows: 1% 99%; 
+            }
+
+            .background-mund img{
+              width: 50%;
+            }
+  
+            .tekstfooter h2{
               font-size: 15px;
             margin-left: 15%;}
 
-          #hivoverskrift{
-            width: 60%;
-            margin-left: 21%;
-            padding-bottom: 100px;
-        
+            .ikoner {
+              padding-bottom: 50px;
+          }
+
+            #logo{
+              width: 50%;
+              margin-left: 10%;
+              top: 68px;
+            }
+
+
+            /* quiz */
+          #forsideoverskriftquiz{
+            width: 35%;
+          }
+
+          .infooverskrifterquiz{
+            margin-left: 33%;
+          }
+
+          #submit{
+            margin-left: 25%;
           }
 
 
-          footer{
-        
-                grid-template-rows: 5% 95%; 
-          }
+            }
 
-          .background-mund img{
-            width: 50%;
-          }
-
-
-          #logo{
-            width: 50%;
-            margin-left: 10%;
-            top: 68px;
-          }
-
-
-          #hvordantest{
-           display: none;
-          }
-
-          .sektion-gifmobil{
-            width: 100%;
-          }
-          
-          .ikoner {
-            padding-bottom: 50px;
-        }
-
-     
-
-        #forsideoverskriftquiz{
-          width: 35%;
-        }
-
-        .infooverskrifterquiz{
-          margin-left: 33%;
-        }
-
-        #submit{
-          margin-left: 25%;
-        }
-
-
-          }
 
             
            
