@@ -1,5 +1,8 @@
+
+/** Lavet af Cathrine*/
+
 /** Ikoner bund footer*/
-  let scriptElement = document.createElement('script');
+let scriptElement = document.createElement('script');
 
 scriptElement.src = 'https://kit.fontawesome.com/e55ea91b63.js';
 
@@ -11,7 +14,7 @@ document.head.appendChild(scriptElement);
 
 
 //Quiz
-var myQuestions = [
+let myQuestions = [
   {
       question: "1: Vil du ALTID opleve symptomer ved klamydia?",
       answers: {
@@ -86,20 +89,20 @@ var myQuestions = [
   },
 ];
 
-var quizContainer = document.getElementById('quiz');
-var resultsContainer = document.getElementById('results');
-var submitButton = document.getElementById('submit');
+let quizContainer = document.getElementById('quiz');
+let resultsContainer = document.getElementById('results');
+let submitButton = document.getElementById('submit');
 
 generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
 
 function generateQuiz(questions, quizContainer, resultsContainer, submitButton) {
 
     function showQuestions(questions, quizContainer) {
-        var output = [];
+        let output = [];
 
         questions.forEach(function (question, i) {
-            var answers = [];
-            for (var letter in question.answers) {
+            let answers = [];
+            for (let letter in question.answers) {
                 answers.push(
                     '<label>'
                     + '<input type="radio" name="question' + i + '" value="' + letter + '">'
@@ -121,15 +124,15 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
     }
 
     function showResults(questions, quizContainer, resultsContainer) {
-        var answerContainers = quizContainer.querySelectorAll('.answers');
-        var userAnswer = '';
-        var numCorrect = 0;
+        let answerContainers = quizContainer.querySelectorAll('.answers');
+        let userAnswer = '';
+        let numCorrect = 0;
 
         questions.forEach(function (question, i) {
             userAnswer = (answerContainers[i].querySelector('input[name=question' + i + ']:checked') || {}).value;
             userAnswer = userAnswer ? userAnswer.toLowerCase() : '';
 
-            var correctAnswer = question.correctAnswer.toLowerCase();
+            let correctAnswer = question.correctAnswer.toLowerCase();
 
             if (userAnswer === correctAnswer) {
                 numCorrect++;
@@ -148,6 +151,5 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
         showResults(questions, quizContainer, resultsContainer);
     };
 }
-
 
   
